@@ -1,0 +1,37 @@
+{% extends 'layout/main.html' %}
+
+{% block title %}
+Contact Page
+{% endblock title %}
+
+{% block body %}
+{% include 'include/headtitle.html' with headtitle="Get in Touch" headsubTitle=" Let's Connect in the Digital Sphere"  %}
+<main class="mb-4">
+    <div class="container py-4 px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10">
+                <h3>How to reach us?</h3>
+                <p>
+                    We value your feedback, suggestions, and stories. If you have any questions, ideas, or simply want to say hello, don't hesitate to reach out to us at <a href="">misgina@gmail.com</a>. Programmers' Blog is not just a blog; it's a dynamic space where the love for programming unites us all. Join us in this exciting adventure, and let's navigate the digital realm together!
+                </p>
+                <!-- <div class="my-5">
+                    <form method="POST">
+                        <div class="form-floating">
+                            {% csrf_token %}
+                            {% for fm in form %}
+                            {{fm}}
+                            <label for="name">{{fm.label_tag}}</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">{{fm.errors|striptags}}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="my-2">
+                            <button class="btn btn-primary text-uppercase disabled" id="submitButton"
+                                type="submit">Send</button>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
